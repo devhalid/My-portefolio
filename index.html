@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Halid</title>
+    <style>
+
+
+        body {
+        margin-left: 10px;
+        font-family: 'Inter', sans-serif;
+        background: #F7F7F7;
+       
+        }
+        .title{
+        text-align: center;
+        }
+
+
+        nav{
+            display: flex;
+            flex-direction: column;
+            margin-top: auto;
+            margin-right: 1rem;
+            flex-wrap: wrap;
+        }
+
+
+        nav a:hover{
+            color: darksalmon;
+        }
+        a:active{
+            color: hotpink;
+        }
+
+
+        h1, h2, h3 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 600;
+        }
+
+
+        header {
+        width: 95%;
+        background: #ffffff;
+        padding: 15px 30px;
+        border-bottom: 1px solid #E5E7EB;
+        }
+    form{
+        max-width: 85%;
+    }
+    input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #2c62b3;
+    border-radius: 8px;
+    font-size: 16px;
+    }
+
+
+    fieldset{
+        border-color:#2c62b3 ;
+    }
+
+
+    @media screen and (min-width: 960px){
+        nav{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+       
+   
+
+
+    </style>
+</head>
+<body>
+    <header>
+            <div class="title">
+                <h1>Halid</h1>
+                <h2>Développeur d'application web</h2>  
+            </div>
+           
+        <nav>
+            <!-- liens de navigation sur la page -->
+           
+            <a href="#presentation">Présentation</a>
+            <a href="#technologie">Mes technologies</a>
+            <a href="#realisation">Mes projets</a>
+            <a href="#contact">Me contacter</a>
+        </nav>
+    </header>
+
+
+    <main>
+        <section id="presentation">
+            <h3 >Qui suis-je ?</h3>
+            <article>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Est quod,
+                    cupiditate blanditiis itaque quas maiores odit deserunt voluptate?
+                    Non incidunt accusantium quod
+                    cumque commodi vitae recusandae hic corporis amet? Aspernatur!</p>
+            </article>
+        </section>
+
+
+        <section id="technologie">
+            <h3 >Mes outils</h3>
+           
+                <!-- les technologie que j'utilise  -->
+                 <p>
+                    Actuellement en formation, le catalogue de mes outils
+                    technologiques notamment les langages informatique n'est,
+                    pas très enrichie. <br>Ainsi j'ai comme maîtrise le HTML5
+                    ( Hypertext makeup langage ) qui est le langage de balisage
+                    que j'utilise pour mes projet. J'ai acquis la certification
+                    de ce langage le 30 Septembe 2025 prouvant mon
+                    investissement dans l'apprentissage de cette technologie.
+                </p>
+
+
+                <figure>
+                    <img src="Introduction to HTML_certificate.jpg"
+                         alt="Document de ma certification en HTML"
+                         title="Ma certification en HTML"
+                         width="550" height="380">
+                    <figcaption> Ma certification en HTML5</figcaption>
+                </figure>
+
+
+                <p>
+                    La seconde technologie que j'ai dû apprendre durant ma formation est
+                    le CSS (Cascading style sheet) Qui sert à apporter du aux documents html.
+                    Ainsi j'ai acquis la maitrise de cette technologie le 14 Octobre 2025.
+                </p>
+               
+                <figure>
+                    <img src="Introduction au CSS_certificate (1).jpg"
+                        alt="Documentde de certification en CSS"
+                        title="Ma certification en CSS"
+                        width="550" height="380">
+                        <figcaption> Ma certification en HTML5</figcaption>
+                </figure>
+        </section>
+
+
+        <section id="realisation">
+            <h3>Mes réalisations</h3>
+            <article>
+                <!-- les differents projets que j'ai réalisé -->
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <section id="contact" class="bas ">
+            <h3>Me contacter</h3>
+            <p>Vous pouvez m'écrire directement via ce formulaire :</p>
+            <!-- formulaire pour me contacter directement depuis le portfolio -->
+            <form action=".">
+
+
+                    <label for="user-name">Votre Nom :</label><br>
+                    <input type="text" name="nom" id="user-name" placeholder="Nom" required><br>
+
+
+                    <label for="user-mail">Votre Adresse mail :</label><br>
+                    <input type="email" name="E-mail" id="user-mail" placeholder="E-mail" required>
+                   
+                 <fieldset>
+                    <legend>Vous êtes :</legend>
+                    <label for="recruteur">Un Recruteur</label>
+                    <input type="radio" name="status" id="recruteur" value="Recruteur"><br>
+
+
+                    <label for="dev">Un Développeur</label>
+                    <input type="radio" name="status" id="dev" value="dévéloppeur"> <br>
+
+
+                    <label for="oth">Autres</label>
+                    <input type="radio" name="status" id="oth" value="autres"><br>
+                 </fieldset>  
+                    <label for="user-mess">Votre message :</label><br>
+                    <textarea name="mess" id="user-mess"></textarea><br>
+
+
+                   
+                   
+                   
+            </form>
+            <div class="autreContact">
+                <p>Me contacter autrement :</p>
+                <a href="mailto:halideyitayo5{@}gmail.com">halideyitayo5{@}gmail.com</a>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
